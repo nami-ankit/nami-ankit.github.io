@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins';
+}
+.bg-primary{
+    background-color: #0D1B2A !important;
+}
+
+.bg-secondary{
+    background-color: #1B263B;
+}
+
+.nav-link{
+    color: #000;
+    font-weight: bold;
+}
+
+.color-secondary{
+    color: #1B263B;
+}
+.header-content h2{
+    font-size: 50px;
+}
+h2{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.bg-primary .accordion-button {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    color: #000;
+}
+
+
+/* Change the color of the dropdown icon to white and set default arrow to down */
+#accordionExample .accordion-button::after {
+    color: white;
+    filter: invert(1); /* This will make the default black arrow icon white */
+    content: '\f078'; /* FontAwesome down chevron */
+    font-family: 'FontAwesome';
+    transform: rotate(0deg); /* Ensure it points down when collapsed */
+}
+
+/* Adjust the icon to point up when the accordion item is expanded */
+#accordionExample .accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg); /* Flip the icon when expanded */
+}
+
+/* Remove default Bootstrap borders from accordion items */
+#accordionExample .accordion-item {
+    border: none; /* Remove default borders */
+}
+
+/* Add a 1px solid white border to the top and bottom of each accordion header */
+#accordionExample .accordion-header .accordion-button {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-radius: 0; /* Remove border-radius */
+}
+
+/* Ensure the bottom border is only visible when the accordion item is collapsed */
+#accordionExample .accordion-button:not(.collapsed) {
+    border-bottom: none;
+}
+
+/* Remove bottom border from the last accordion item's button to avoid double border */
+#accordionExample .accordion-item:last-of-type .accordion-button {
+    border-bottom: none;
+}
+
+
+/* Testimonial Styles */
+
+/* Ensures text and items within each slide are centered */
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonial-image {
+   
+    margin-bottom: 10px; /* Adds spacing between image and text */
+}
+
+
+.testimonial-text {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.testimonial-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.testimonial-company {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.swiper-custom-button-prev, .swiper-custom-button-next{
+    color: #000; 
+    font-size: 30px; 
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.swiper-custom-button-prev {
+    left: 10vw;
+}
+
+.swiper-custom-button-next {
+    right: 10vw;
+}
+
+
+.overlay-section {
+    position: relative;
+    background: url('./assets/images/military.jpg') no-repeat center center/cover;
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(13, 27, 42, 0.6); 
+    z-index: 1;
+}
+
+.overlay-section .container {
+    position: relative;
+    z-index: 2; 
+}
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 2px solid #0d1b2a; 
+  }
+
+  footer ul.list-unstyled a {
+    
+    line-height: 2;
+    text-decoration: none;
+    color: white;
+}
+
+.responsive-map{
+    width: 150%;
+}
+
+.responsive-map iframe{
+    height: 200px;
+    width: 100%;
+}
+
+@media screen and (max-width:1000px) {
+   
+    .responsive-map{
+        width: 100%;
+    }
+    
+    .responsive-map iframe{
+        height: 10%;
+        width: 100%;
+    }
+    .title{
+        align-items: start !important;
+    }
+    .no-small{
+        
+        display: none !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
